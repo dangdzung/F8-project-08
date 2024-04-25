@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en ">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Checkout | Grocery Mart</title>
+
+        <title>Shipping | Grocery Mart</title>
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -41,8 +42,8 @@
         <!-- MAIN -->
         <main class="checkout-page">
             <div class="container">
-                <!-- Search bar-->
-                <div class="product-container">
+                <!-- Search bar -->
+                <div class="checkout-container">
                     <div class="search-bar d-none d-md-flex">
                         <input
                             type="text"
@@ -55,40 +56,216 @@
                             <img
                                 src="./assets/icons/search.svg"
                                 alt=""
-                                class="search-bar__icon"
+                                class="search-bar__icon icon"
                             />
                         </button>
                     </div>
                 </div>
-                <!-- breadcrumbs -->
-                <div class="checkout-container prod-info-content">
+                <!-- Breadcrumbs -->
+                <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
                         <li>
-                            <a href="#!" class="breadcrumbs__link"
-                                >Home
+                            <a href="./" class="breadcrumbs__link">
+                                Home
                                 <img
                                     src="./assets/icons/arrow-right.svg"
                                     alt=""
-                            /></a>
+                                />
+                            </a>
                         </li>
+                        <li>
+                            <a href="./checkout.html" class="breadcrumbs__link">
+                                Checkout
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
 
+                           
+                        </li>
                         <li>
                             <a
                                 href="#!"
                                 class="breadcrumbs__link breadcrumbs__link--current"
-                                >Checkout
-                            </a>
+                                >Shipping</a
+                            >
                         </li>
                     </ul>
                 </div>
-
                 <!-- Checkout content -->
                 <div class="checkout-container">
                     <div class="row gy-xl-3">
                         <div class="col-8 col-xl-12">
                             <div class="cart-info">
+                                <h1 class="cart-info__heading">
+                                    1. Shipping, arrives between Mon, May
+                                    16—Tue, May 24
+                                </h1>
+                                <div class="cart-info__separate"></div>
+                                <!-- Checkout address -->
+                                <div class="user-address">
+                                    <div class="user-address__top">
+                                        <div>
+                                            <h2 class="user-address__title">
+                                                Shipping address
+                                            </h2>
+                                            <p class="user-address__desc">
+                                                Where should we deliver your
+                                                order?
+                                            </p>
+                                        </div>
+                                        <button
+                                            class="user-address__btn btn btn--primary btn--rounded btn--small"
+                                        >
+                                            <img
+                                                src="./assets/icons/plus.svg"
+                                                alt=""
+                                            />
+                                            Add a new address
+                                        </button>
+                                    </div>
+                                    <div class="user-address__list">
+                                        <!-- Empty message -->
+                                        <!-- <p class="user-address__message">
+                                            Not address yet.
+                                            <a class="user-address__link" href="#!">Add a new address</a>
+                                        </p> -->
+
+                                        <!-- Address card 1 -->
+                                        <article class="address-card">
+                                            <div class="address-card__left">
+                                                <div
+                                                    class="address-card__choose"
+                                                >
+                                                    <label
+                                                        class="address-card__checkbox"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            name=""
+                                                            checked
+                                                            class="address-card__checkbox-input"
+                                                        />
+                                                    </label>
+                                                </div>
+                                                <div class="address-card__info">
+                                                    <h3
+                                                        class="address-card__title"
+                                                    >
+                                                        Imran Khan
+                                                    </h3>
+
+                                                    <p
+                                                        class="address-card__desc"
+                                                    >
+                                                        Museum of Rajas, Sylhet
+                                                        Sadar, Sylhet 3100.
+                                                    </p>
+                                                    <ul
+                                                        class="address-card__list"
+                                                    >
+                                                        <li
+                                                            class="address-card__list-item"
+                                                        >
+                                                            Shipping
+                                                        </li>
+                                                        <li
+                                                            class="address-card__list-item"
+                                                        >
+                                                            Delivery from store
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-card__right">
+                                                <div class="address-card__ctrl">
+                                                    <button
+                                                        class="address-card__ctrl-btn"
+                                                    >
+                                                        <img
+                                                            class="icon"
+                                                            src="./assets/icons/edit.svg"
+                                                            alt=""
+                                                        />
+                                                        Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Address card 2 -->
+                                        <article class="address-card">
+                                            <div class="address-card__left">
+                                                <div
+                                                    class="address-card__choose"
+                                                >
+                                                    <label
+                                                        class="address-card__checkbox"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            name=""
+                                                            class="address-card__checkbox-input"
+                                                        />
+                                                    </label>
+                                                </div>
+                                                <div class="address-card__info">
+                                                    <h3
+                                                        class="address-card__title"
+                                                    >
+                                                        Imran Khan
+                                                    </h3>
+
+                                                    <p
+                                                        class="address-card__desc"
+                                                    >
+                                                        Al Hamra City (10th
+                                                        Floor), Hazrat Shahjalal
+                                                        Road, Sylhet, Sylhet,
+                                                        Bangladesh
+                                                    </p>
+                                                    <ul
+                                                        class="address-card__list"
+                                                    >
+                                                        <li
+                                                            class="address-card__list-item"
+                                                        >
+                                                            Shipping
+                                                        </li>
+                                                        <li
+                                                            class="address-card__list-item"
+                                                        >
+                                                            Delivery from store
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-card__right">
+                                                <div class="address-card__ctrl">
+                                                    <button
+                                                        class="address-card__ctrl-btn"
+                                                    >
+                                                        <img
+                                                            class="icon"
+                                                            src="./assets/icons/edit.svg"
+                                                            alt=""
+                                                        />
+                                                        Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="cart-info__separate"></div>
+
+                                <h2 class="cart-info__sub-heading">
+                                    Items details
+                                </h2>
                                 <div class="cart-info__list">
                                     <!-- Cart item 1 -->
+
                                     <article class="cart-item">
                                         <a href="./product-detail.html">
                                             <img
@@ -107,8 +284,8 @@
                                                     >
                                                         Coffee Beans - Espresso
                                                         Arabica and Robusta
-                                                        Beans</a
-                                                    >
+                                                        Beans
+                                                    </a>
                                                 </h3>
                                                 <p
                                                     class="cart-item__price-wrap"
@@ -119,7 +296,9 @@
                                                         >In Stock</span
                                                     >
                                                 </p>
-                                                <div class="cart-item__ctrl">
+                                                <div
+                                                    class="cart-item__ctrl cart-item__ctrl--md-block"
+                                                >
                                                     <div
                                                         class="cart-item__input"
                                                     >
@@ -168,7 +347,7 @@
                                                         class="cart-item__ctrl-btn"
                                                     >
                                                         <img
-                                                            src="./assets/icons/heart.svg"
+                                                            src="./assets/icons/heart-2.svg"
                                                             alt=""
                                                         />
                                                         Save
@@ -191,7 +370,7 @@
                                     <article class="cart-item">
                                         <a href="./product-detail.html">
                                             <img
-                                                src="./assets/img/product/item-1.png"
+                                                src="./assets/img/product/item-2.png"
                                                 alt=""
                                                 class="cart-item__thumb"
                                             />
@@ -205,9 +384,8 @@
                                                         href="./product-detail.html"
                                                     >
                                                         Lavazza Coffee Blends -
-                                                        Try the Italian
-                                                        Espresso</a
-                                                    >
+                                                        Try the Italian Espresso
+                                                    </a>
                                                 </h3>
                                                 <p
                                                     class="cart-item__price-wrap"
@@ -262,14 +440,14 @@
                                                 <p
                                                     class="cart-item__total-price"
                                                 >
-                                                    $53.00
+                                                    $106.00
                                                 </p>
                                                 <div class="cart-item__ctrl">
                                                     <button
                                                         class="cart-item__ctrl-btn"
                                                     >
                                                         <img
-                                                            src="./assets/icons/heart.svg"
+                                                            src="./assets/icons/heart-2.svg"
                                                             alt=""
                                                         />
                                                         Save
@@ -292,7 +470,7 @@
                                     <article class="cart-item">
                                         <a href="./product-detail.html">
                                             <img
-                                                src="./assets/img/product/item-1.png"
+                                                src="./assets/img/product/item-3.png"
                                                 alt=""
                                                 class="cart-item__thumb"
                                             />
@@ -307,8 +485,8 @@
                                                     >
                                                         Qualità Oro Mountain
                                                         Grown - Espresso Coffee
-                                                        Beans</a
-                                                    >
+                                                        Beans
+                                                    </a>
                                                 </h3>
                                                 <p
                                                     class="cart-item__price-wrap"
@@ -370,7 +548,7 @@
                                                         class="cart-item__ctrl-btn"
                                                     >
                                                         <img
-                                                            src="./assets/icons/heart.svg"
+                                                            src="./assets/icons/heart-2.svg"
                                                             alt=""
                                                         />
                                                         Save
@@ -399,20 +577,21 @@
                                                     class="cart-info__continue-link"
                                                 >
                                                     <img
-                                                        class="cart-info__continue-icon"
+                                                        class="cart-info__continue-icon icon"
                                                         src="./assets/icons/arrow-down-2.svg"
                                                         alt=""
-                                                    />Continue Shopping</a
-                                                >
+                                                    />
+                                                    Continue Shopping
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="col-4 col-xxl-5">
                                             <div class="cart-info__row">
-                                                <span> Subtotal:</span>
+                                                <span>Subtotal:</span>
                                                 <span>$191.65</span>
                                             </div>
                                             <div class="cart-info__row">
-                                                <span> Shipping:</span>
+                                                <span>Shipping:</span>
                                                 <span>$10.00</span>
                                             </div>
                                             <div
@@ -421,7 +600,7 @@
                                             <div
                                                 class="cart-info__row cart-info__row--bold"
                                             >
-                                                <span> Total:</span>
+                                                <span>Total:</span>
                                                 <span>$201.65</span>
                                             </div>
                                         </div>
@@ -432,37 +611,38 @@
                         <div class="col-4 col-xl-12">
                             <div class="cart-info">
                                 <div class="cart-info__row">
-                                    <span>
-                                        Subtotal
+                                    <span
+                                        >Subtotal
                                         <span class="cart-info__sub-label"
                                             >(items)</span
-                                        >
-                                    </span>
+                                        ></span
+                                    >
                                     <span>3</span>
                                 </div>
                                 <div class="cart-info__row">
-                                    <span>
-                                        Price
+                                    <span
+                                        >Price
                                         <span class="cart-info__sub-label"
                                             >(Total)</span
-                                        >
-                                    </span>
+                                        ></span
+                                    >
                                     <span>$191.65</span>
                                 </div>
                                 <div class="cart-info__row">
-                                    <span> Shipping</span>
+                                    <span>Shipping</span>
                                     <span>$10.00</span>
                                 </div>
                                 <div class="cart-info__separate"></div>
                                 <div class="cart-info__row">
-                                    <span> Estimated Total</span>
+                                    <span>Estimated Total</span>
                                     <span>$201.65</span>
                                 </div>
                                 <a
-                                    href="./shipping.html"
-                                    class="btn btn--primary btn--rounded cart-info__next-btn"
-                                    >Continue to checkout</a
+                                    href="#!"
+                                    class="cart-info__next-btn btn btn--primary btn--rounded"
                                 >
+                                    Continue to checkout
+                                </a>
                             </div>
                             <div class="cart-info">
                                 <a href="#!">
@@ -496,22 +676,21 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
-        <!-- Dialog / modal -->
-        <div class="dialog hide" id="delete-confirm">
-            <div class="dialog__content">
-                <div class="dialog__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim possimus laudantium odio modi fugiat fugit?
+        <!-- Modal -->
+        <div id="delete-confirm" class="modal hide">
+            <div class="modal__content">
+                <div class="modal__text">
+                    Lorem ipsum dolor sit amet consectetur?
                 </div>
-                <div class="dialog__bottom">
+                <div class="modal__bottom">
                     <button
-                        class="btn btn--small btn--text dialog__btn js-toggle"
+                        class="btn btn--small btn--text modal__btn js-toggle"
                         toggle-target="#delete-confirm"
                     >
                         Cancel
                     </button>
                     <button
-                        class="btn btn--small btn--primary dialog__btn btn--no-margin js-toggle"
+                        class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
                         toggle-target="#delete-confirm"
                     >
                         Confirm
@@ -519,7 +698,7 @@
                 </div>
             </div>
             <div
-                class="dialog__overlay js-toggle"
+                class="modal__overlay js-toggle"
                 toggle-target="#delete-confirm"
             ></div>
         </div>
